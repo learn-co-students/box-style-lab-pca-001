@@ -5,6 +5,9 @@ body, html {
   margin: 0 auto;
   display: block;
   text-align: center;
+  background-image: url("../images/white-wood.jpg");
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .container, h1 {
@@ -15,25 +18,55 @@ body, html {
   margin: 10px auto;
 }
 
-h4 {
+h4.section-1 {
   width: fit-content;
   display: inline-block;
   padding: 5px;
   margin: 20px 0 0 0;
+  background: linear-gradient(to right, #116325, #44cc66)
+}
+
+h4.section-2 {
+  width: fit-content;
+  display: inline-block;
+  padding: 5px;
+  margin: 20px 0 0 0;
+  background: linear-gradient(to right, #747410, #dddd22)
+}
+
+h4.section-3 {
+  width: fit-content;
+  display: inline-block;
+  padding: 5px;
+  margin: 20px 0 0 0;
+  background: linear-gradient(to right, #6d2020, #dd4444)
+}
+
+img {
+  box-sizing: border-box;
+  border: 2px solid #333;
+}
+
+img:hover {
+  transition-duration: 1s;
+  transform: scale(1.05);
 }
 
 .amiable {
   border: 1px solid #22aa44;
   box-shadow:  -1px 1px #22aa44, -2px 2px #22aa44, -3px 3px #22aa44, -4px 4px #22aa44, -5px 5px #22aa44;
   background-color: #44cc66;
-
 }
 
 .indifferent {
+  border: 1px solid #a0a017;
+  box-shadow:  -1px 1px #a0a017, -2px 2px #a0a017, -3px 3px #a0a017, -4px 4px #a0a017, -5px 5px #a0a017;
   background-color: #dddd22;
 }
 
 .dubious {
+  border: 1px solid #962d2d;
+  box-shadow:  -1px 1px #962d2d, -2px 2px #962d2d, -3px 3px #962d2d, -4px 4px #962d2d, -5px 5px #962d2d;
   background-color: #dd4444;
 }
 
@@ -53,4 +86,9 @@ h4 {
 
 .large {
   width: 303%;
+}
+
+img {
+  border: solid 2px #3f3f3f;
+  box-sizing: border-box;
 }
